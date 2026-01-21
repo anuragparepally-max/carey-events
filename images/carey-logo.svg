@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <style>
+    .logo-text { font-family: 'Times New Roman', Georgia, serif; fill: #0d4a6f; }
+    .main-text { font-size: 58px; font-weight: 400; letter-spacing: 4px; }
+    .sub-text { font-size: 14px; font-weight: 400; letter-spacing: 12px; }
+  </style>
+  <text x="10" y="55" class="logo-text main-text">CAREY</text>
+  <text x="10" y="80" class="logo-text sub-text">INTERNATIONAL</text>
+</svg>
