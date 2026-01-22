@@ -465,11 +465,23 @@
             transition: all 0.4s ease;
             position: relative;
             z-index: 1;
+            background: transparent;
         }
 
         .client-logo:hover img {
             filter: grayscale(0%) opacity(1);
             transform: scale(1.05);
+        }
+
+        /* Image loading states */
+        img {
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+        img:not([src]) {
+            visibility: hidden;
         }
 
         /* Metrics Section */
@@ -1727,28 +1739,28 @@
         </div>
         <div class="clients-logos">
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/National_Basketball_Association_logo.svg/200px-National_Basketball_Association_logo.svg.png" alt="NBA">
+                <img src="https://logo.clearbit.com/nba.com" alt="NBA" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2236%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>NBA</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/200px-National_Football_League_logo.svg.png" alt="NFL">
+                <img src="https://logo.clearbit.com/nfl.com" alt="NFL" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2236%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>NFL</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/77/PGA_Tour_logo.svg/200px-PGA_Tour_logo.svg.png" alt="PGA Tour">
+                <img src="https://logo.clearbit.com/pgatour.com" alt="PGA Tour" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2228%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>PGA TOUR</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/J_P_Morgan_Logo_2008_1.svg/280px-J_P_Morgan_Logo_2008_1.svg.png" alt="JP Morgan">
+                <img src="https://logo.clearbit.com/jpmorgan.com" alt="JP Morgan" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2224%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>JP Morgan</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://cdn.worldvectorlogo.com/logos/blackrock.svg" alt="BlackRock">
+                <img src="https://logo.clearbit.com/blackrock.com" alt="BlackRock" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2228%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>BlackRock</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/200px-MasterCard_Logo.svg.png" alt="Mastercard">
+                <img src="https://logo.clearbit.com/mastercard.com" alt="Mastercard" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2228%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Mastercard</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/280px-Goldman_Sachs.svg.png" alt="Goldman Sachs">
+                <img src="https://logo.clearbit.com/goldmansachs.com" alt="Goldman Sachs" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2224%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Goldman Sachs</text></svg>';">
             </div>
             <div class="client-logo animate-on-scroll">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png" alt="ESPN">
+                <img src="https://logo.clearbit.com/espn.com" alt="ESPN" onerror="this.onerror=null; this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 80%22><text x=%2250%%22 y=%2250%%22 font-family=%22Arial,sans-serif%22 font-size=%2236%22 font-weight=%22bold%22 fill=%22%230d4a6f%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>ESPN</text></svg>';">
             </div>
         </div>
     </section>
@@ -1895,7 +1907,7 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item large animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Corporate Conference">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Corporate Conference" loading="lazy">
                 <div class="gallery-overlay">
                     <span class="gallery-category">Corporate Conference</span>
                     <h3>Goldman Sachs Annual Summit</h3>
@@ -1903,28 +1915,28 @@
                 </div>
             </div>
             <div class="gallery-item animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600" alt="Gala Event">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600" alt="Gala Event" loading="lazy">
                 <div class="gallery-overlay">
                     <span class="gallery-category">Gala Event</span>
                     <h3>NBA Championship Celebration</h3>
                 </div>
             </div>
             <div class="gallery-item animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600" alt="Product Launch">
+                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600" alt="Product Launch" loading="lazy">
                 <div class="gallery-overlay">
                     <span class="gallery-category">Product Launch</span>
                     <h3>Mastercard Innovation Day</h3>
                 </div>
             </div>
             <div class="gallery-item animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600" alt="Executive Retreat">
+                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600" alt="Executive Retreat" loading="lazy">
                 <div class="gallery-overlay">
                     <span class="gallery-category">Executive Retreat</span>
                     <h3>BlackRock Leadership Summit</h3>
                 </div>
             </div>
             <div class="gallery-item large animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800" alt="Sports Event">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800" alt="Sports Event" loading="lazy">
                 <div class="gallery-overlay">
                     <span class="gallery-category">Sports Event</span>
                     <h3>PGA Tour Championship Gala</h3>
@@ -1932,7 +1944,7 @@
                 </div>
             </div>
             <div class="gallery-item animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600" alt="Investor Day">
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600" alt="Investor Day" loading="lazy">
                 <div class="gallery-overlay">
                     <span class="gallery-category">Investor Event</span>
                     <h3>JP Morgan Investor Day</h3>
@@ -1945,9 +1957,9 @@
     <section id="about" class="about">
         <div class="about-container">
             <div class="about-images animate-on-scroll">
-                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600" alt="Corporate Event" class="about-img-main">
-                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=300" alt="Gala Event" class="about-img-float top">
-                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=300" alt="Conference" class="about-img-float bottom">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600" alt="Corporate Event" class="about-img-main" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=300" alt="Gala Event" class="about-img-float top" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=300" alt="Conference" class="about-img-float bottom" loading="lazy">
             </div>
             <div class="about-content animate-on-scroll">
                 <span class="section-badge">About Us</span>
@@ -2012,7 +2024,7 @@
                     </div>
                     <p class="testimonial-text">"Carey's team managed our global investor summit flawlessly. Their attention to detail and professionalism exceeded our highest expectations. A true partner."</p>
                     <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Michael Roberts" class="author-avatar-img">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Michael Roberts" class="author-avatar-img" loading="lazy">
                         <div class="author-info">
                             <h4>Michael Roberts</h4>
                             <p>Managing Director, JP Morgan</p>
@@ -2026,7 +2038,7 @@
                     </div>
                     <p class="testimonial-text">"From draft events to championship celebrations, Carey's has been our go-to for over 5 years. They understand the pressure and always deliver excellence."</p>
                     <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="David Williams" class="author-avatar-img">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="David Williams" class="author-avatar-img" loading="lazy">
                         <div class="author-info">
                             <h4>David Williams</h4>
                             <p>VP of Events, NBA</p>
@@ -2040,7 +2052,7 @@
                     </div>
                     <p class="testimonial-text">"The Masters week hospitality they produced for us was nothing short of spectacular. Our clients were thoroughly impressed. Best in the business."</p>
                     <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah Lancaster" class="author-avatar-img">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah Lancaster" class="author-avatar-img" loading="lazy">
                         <div class="author-info">
                             <h4>Sarah Lancaster</h4>
                             <p>CMO, BlackRock</p>
